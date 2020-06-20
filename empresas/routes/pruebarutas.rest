@@ -1,0 +1,52 @@
+GET http://localhost:3000
+###
+POST  http://localhost:3000/empleados/create
+Content-Type: application/json
+
+{
+    "nombre": "estoy hasta los mixies",
+    "dni": "121212121",
+    "sexo": "M",
+    "fecha_nac":"1990-10-12",
+    "salario":"2000",
+    "cargo":"paraguas",
+    "fk_departamento":"1"
+}
+###
+DELETE http://localhost:3000/empleados/delete/35
+
+###
+
+PUT  http://localhost:3000/empleados/update
+Content-Type: application/json
+
+{   "id":35,
+    "nombre":"paco"
+}
+###
+GET  http://localhost:3000/departamentos
+
+###
+
+DELETE http://localhost:3000/departamentos/delete/6
+
+###
+
+POST  http://localhost:3000/departamentos/create
+Content-Type: application/json
+
+{
+    "id": "22",
+    "nombre_departamento": "cagadorex",
+    "ciudad": "guarroman"
+}
+###
+
+ PUT   http://localhost:3000/departamentos/update
+Content-Type: application/json
+
+{
+    "id": "22",
+    "nombre_departamento": "cagadorex",
+    "ciudad": "guarroman"
+}
